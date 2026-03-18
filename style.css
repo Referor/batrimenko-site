@@ -179,6 +179,22 @@ svg {
 	fill: currentColor;
 }
 
+/* === Tilda override: reset link styles inside .mainwrap === */
+.mainwrap a:not(.btn) {
+	color: inherit !important;
+	text-decoration: none !important;
+	outline: none;
+	cursor: pointer;
+}
+
+.mainwrap a.btn-white {
+	color: var(--dark) !important;
+}
+
+.mainwrap a.btn-dark {
+	color: var(--white) !important;
+}
+
 a {
 	color: #009;
 	text-decoration: underline;
@@ -1052,7 +1068,7 @@ a:not(.btn):has(.js_hover) {
 	position: absolute;
 	inset: 0;
 	border-radius: inherit;
-	background-image: url('https://lh3.googleusercontent.com/d/1kcZNz8QRah-4Tes-dg0v87BRujPSe06w'), var(--gradient);
+	background-image: url('https://cdn.jsdelivr.net/gh/referor/batrimenko-site/img/about-hover.svg'), var(--gradient);
 	background-size: cover;
 	background-repeat: no-repeat;
 	transition: opacity 0.4s ease;
@@ -1785,11 +1801,11 @@ a:not(.btn):has(.js_hover) {
 }
 
 .slider-events-prev:after {
-	background-image: url('https://lh3.googleusercontent.com/d/1d8qJVs1D6PRN5yHxcNM6njZxnvYk3o3Z');
+	background-image: url('https://cdn.jsdelivr.net/gh/referor/batrimenko-site/img/prev.svg');
 }
 
 .slider-events-next:after {
-	background-image: url('https://lh3.googleusercontent.com/d/1x_mgwZa29RQfcRT9GuhQ22YkyJyCsdJ7');
+	background-image: url('https://cdn.jsdelivr.net/gh/referor/batrimenko-site/img/next.svg');
 }
 
 @media only screen and (max-width: 1023px) {
@@ -2007,7 +2023,7 @@ a:not(.btn):has(.js_hover) {
 	flex: 0 0 auto;
 	width: 50px;
 	height: 40px;
-	background: var(--dark) url('https://lh3.googleusercontent.com/d/1x_mgwZa29RQfcRT9GuhQ22YkyJyCsdJ7') no-repeat 50% 50%/15px auto;
+	background: var(--dark) url('https://cdn.jsdelivr.net/gh/referor/batrimenko-site/img/next.svg') no-repeat 50% 50%/15px auto;
 	border-radius: 3px;
 }
 
