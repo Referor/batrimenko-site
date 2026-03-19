@@ -1884,6 +1884,19 @@ a:not(.btn):has(.js_hover) {
 	color: inherit !important;
 }
 
+/* Align Tilda feed cards to the left like index.html */
+.t-feed__container,
+.t-feed .t-container {
+	margin-left: var(--side, 60px) !important;
+	margin-right: 0 !important;
+	max-width: none !important;
+	width: auto !important;
+}
+
+.t-feed .t-slds__container {
+	width: 100% !important;
+}
+
 @media only screen and (max-width: 767px) {
 	.t-feed .t-feed__post-img {
 		height: 214px !important;
