@@ -1817,29 +1817,31 @@ a:not(.btn):has(.js_hover) {
 }
 
 /* === Tilda feed cards → match index.html .event-card design === */
+/* Using Tilda rec IDs for specificity override */
 
-/* Card background and shape */
-.js-feed-post.t-feed__post {
+#rec2000725591 .js-feed-post,
+#rec2006307661 .js-feed-post {
 	background-color: #121213 !important;
 	border-radius: 5px !important;
 	overflow: hidden !important;
 }
 
-/* Card image */
-.t-feed__post-imgwrapper {
+#rec2000725591 .t-feed__post-imgwrapper,
+#rec2006307661 .t-feed__post-imgwrapper {
 	border-radius: 5px 5px 0 0 !important;
 	overflow: hidden !important;
 }
 
-.t-feed__post-img.t-img {
+#rec2000725591 .t-feed__post-img,
+#rec2006307661 .t-feed__post-img {
 	width: 100% !important;
 	height: 274px !important;
 	object-fit: cover !important;
 	object-position: center !important;
 }
 
-/* Card text area */
-.t-feed__textwrapper {
+#rec2000725591 .t-feed__textwrapper,
+#rec2006307661 .t-feed__textwrapper {
 	padding: 30px 20px !important;
 	min-height: 200px !important;
 	display: flex !important;
@@ -1847,8 +1849,8 @@ a:not(.btn):has(.js_hover) {
 	justify-content: space-between !important;
 }
 
-/* Card title */
-.js-feed-post-title.t-feed__post-title {
+#rec2000725591 .t-feed__post-title,
+#rec2006307661 .t-feed__post-title {
 	font-family: "Inter Tight", sans-serif !important;
 	font-weight: 500 !important;
 	font-size: clamp(20px, 1.5rem, 24px) !important;
@@ -1856,8 +1858,8 @@ a:not(.btn):has(.js_hover) {
 	color: #fff !important;
 }
 
-/* Card description / date */
-.js-feed-post-descr.t-feed__post-descr {
+#rec2000725591 .t-feed__post-descr,
+#rec2006307661 .t-feed__post-descr {
 	font-family: "Inter Tight", sans-serif !important;
 	font-size: 14px !important;
 	line-height: 1.3 !important;
@@ -1866,17 +1868,19 @@ a:not(.btn):has(.js_hover) {
 	margin-top: auto !important;
 }
 
-/* Card link */
-a.js-feed-post-link {
+#rec2000725591 a.js-feed-post-link,
+#rec2006307661 a.js-feed-post-link {
 	text-decoration: none !important;
 	color: inherit !important;
 }
 
 @media only screen and (max-width: 767px) {
-	.t-feed__post-img.t-img {
+	#rec2000725591 .t-feed__post-img,
+	#rec2006307661 .t-feed__post-img {
 		height: 214px !important;
 	}
-	.t-feed__textwrapper {
+	#rec2000725591 .t-feed__textwrapper,
+	#rec2006307661 .t-feed__textwrapper {
 		padding: 20px !important;
 		min-height: 180px !important;
 	}
