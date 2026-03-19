@@ -1932,9 +1932,11 @@ a:not(.btn):has(.js_hover) {
 	margin-bottom: -0.075em;
 }
 
-.footer .text a {
+.footer .text a,
+.mainwrap .footer .text a,
+.mainwrap .footer .text a:not(.btn) {
 	text-decoration: none;
-	color: var(--white) !important;
+	color: #fff !important;
 }
 
 .footer .title {
